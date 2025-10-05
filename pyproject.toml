@@ -1,0 +1,22 @@
+[project]
+name = "mu-pki"
+version = "0.1.0"
+description = "a handy tool for managing your own pki"
+authors = [
+    { name = "k3-cat", email = "k3-cat@outlook.com" }
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "cryptography>=46.0.1",
+    "dotenv>=0.9.9",
+    "pydantic>=2.11.9",
+    "tomlkit>=0.13.3",
+    "wcwidth>=0.2.14",
+    "windows-curses>=2.4.1; sys_platform == 'win32'",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.13.2",
+]
